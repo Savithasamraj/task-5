@@ -1,0 +1,243 @@
+1)
+a) Print Odd numbers
+
+var arr1 = [ 1,2,3,4,5,6,7 ];
+
+
+function (a ) { 
+for( var a of a )
+{
+  var res = [];
+	if( a%2 !== 0)
+	{
+		res += a
+	}
+
+}
+}(arr1)
+
+
+
+b) Convert all the strings to title caps in a string array
+
+function (str) {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  }
+  console.log(str.join(' '));
+}("HELLO WORLD")
+
+
+c) Sum of all numbers in an array
+
+function (sum) {
+ var s = 0 ;
+ for (var n of sum)
+{
+	s += n ;
+}
+	console.log(`Sum of all numbers in an array is ${s} ' ;
+
+}([ 1,2,3,4,5,6,7 ]);
+
+
+2)
+
+Problem:
+Write a function called “addFive”.
+Given a number, “addFive” returns 5 added to that number.
+
+var num = 10;
+function addFive(num) { 
+
+ var res = num + 5;
+ console.log(res)
+
+}
+var result = addFive(num)
+
+
+Problem:
+Write a function called “getOpposite”.
+Given a number, return its opposite
+
+var num = 5;
+function getOpposite(num) {
+
+ if (num > 0)
+ {
+ console.log(-Math.abs(num))
+ }
+ else
+  {
+ console.log(Math.abs(num))
+ }
+ 
+}
+var result = getOpposite(num)
+
+Problem:
+Fill in your code that takes an number minutes and converts it to seconds.
+
+var min = 5;
+function toSeconds(min) {
+
+ var res = min*60
+ console.log(res)
+}
+var secs = toSeconds(min)
+
+Problem
+Create a function that takes a string and returns it as an integer.
+
+var mystr = "5";
+function toInteger(mystr) {
+
+ console.log( +mystr)
+}
+var myint = toInteger(mystr)
+
+Problem
+Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+var myint = 0;
+function nextNumber(myint) {
+console.log(myint+1)
+
+}
+var myNextint = nextNumber(myint)
+
+Problem
+Create a function that takes an array and returns the first element.
+
+var arr = [1, 2, 3];
+function getFirstElement(arr) {
+console.log(arr[0])
+}
+var data = getFirstElement(arr)
+
+Problem
+Convert Hours into Seconds
+Write a function that converts hours into seconds.
+
+var arr = [1, 2, 3];
+function hourToSeconds(arr) {
+    for( var n of arr )
+    {
+        console.log( n *60*60)
+    }
+
+}
+var data = hourToSeconds(arr)
+
+Problem
+Find the Perimeter of a Rectangle
+Create a function that takes height and width and finds the perimeter of a rectangle.
+
+function findPerimeter(num1,num2) {
+
+console.log(2*num1*num2)
+}
+var peri = findPerimeter(6,7)
+
+Problem
+Less Than 100?
+Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+
+function lessThan100(num1,num2) {
+
+    if((num1+num2)<100)
+    {
+     console.log("TRUE")
+     }
+     else
+     {
+          console.log("FALSE")
+        }
+}
+var res = lessThan100(22,15)
+
+Problem
+There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+function remainder(num1,num2) {
+
+console.log(num1%num2)
+}
+var res = remainder(1,3)
+
+
+Problem
+Old macdonald had a farm:
+MacDonald is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
+turkey = 2 legs
+horse = 4 legs
+pigs = 4 legs
+The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.
+Examples
+
+function CountAnimals(tur,horse,pigs) {
+
+ console.log( (tur*2) + (horse*4) + (pigs*4) )
+}
+var legs = CountAnimals(2,3,5)
+
+
+Problem
+Frames Per Second
+Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+
+function frames(num1,num2) {
+
+console.log((num1) * (num2*60))
+}
+var fps = frames(10, 25)
+
+
+3)
+
+a) Print Odd numbers
+
+var arr1 = [ 1,2,3,4,5,6,7 ];
+
+
+const = (a ) => { 
+for( var a of a )
+{
+  var res = [];
+	if( a%2 !== 0)
+	{
+		res += a
+	}
+
+}
+}(arr1)
+
+
+
+b) Convert all the strings to title caps in a string array
+
+const = (str) => {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  }
+  console.log(str.join(' '));
+}("HELLO WORLD")
+
+
+c) Sum of all numbers in an array
+
+const =  (sum) => {
+ var s = 0 ;
+ for (var n of sum)
+{
+	s += n ;
+}
+	console.log(`Sum of all numbers in an array is ${s} ' ;
+
+}([ 1,2,3,4,5,6,7 ]);
+
+
+
